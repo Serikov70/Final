@@ -1,0 +1,36 @@
+:root{
+--primary:#1f6feb;
+--accent:#ff7a59;
+--bg:#f7f9fc;
+--txt:#222;
+--radius:12px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial, sans-serif;background:var(--bg);color:var(--txt)}
+.site-header{background:white;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.logo{font-weight:700;font-size:1.2rem;text-decoration:none;color:var(--primary)}
+.nav-link{margin-left:1rem;color:inherit;text-decoration:none}
+.hero h1{font-size:2rem}
+.feature-card:nth-child(2) { transform: translateY(6px); }
+.feature-card{border:none}
+.site-footer a{color:#ddd}
+.card{border-radius:var(--radius)}
+.filter-btn.active{background:var(--primary);color:#fff}
+@media (max-width: 768px){
+.nav{display:none}
+.hero h1{font-size:1.6rem}
+}
+@media (min-width: 1200px){.hero h1{font-size:2.6rem}}
+
+
+/* Portfolio cards grid placeholder */
+.portfolio-card{transition:transform .25s}
+.portfolio-card:hover{transform:translateY(-6px)}
+
+
+/* simple table responsive */
+.table-responsive{overflow:auto}
+
+
+/* small accessibility helpers */
+:focus{outline:2px dashed var(--accent)}
